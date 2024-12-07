@@ -1,0 +1,105 @@
+[gd_scene load_steps=15 format=3 uid="uid://dm281vl350gey"]
+
+[ext_resource type="Texture2D" uid="uid://bxkev4p8giuth" path="res://Bunny_idle.png" id="1_1nnik"]
+[ext_resource type="Script" path="res://Scenes-tscn-gd files/enemy_bunny.gd" id="1_c26lg"]
+[ext_resource type="AudioStream" uid="uid://crx2vbeyxbcb1" path="res://Audios/hitHurt.wav" id="3_acjjt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pqeo8"]
+atlas = ExtResource("1_1nnik")
+region = Rect2(0, 0, 34, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wth0s"]
+atlas = ExtResource("1_1nnik")
+region = Rect2(34, 0, 34, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ka62w"]
+atlas = ExtResource("1_1nnik")
+region = Rect2(68, 0, 34, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xpwtj"]
+atlas = ExtResource("1_1nnik")
+region = Rect2(102, 0, 34, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_blgo2"]
+atlas = ExtResource("1_1nnik")
+region = Rect2(136, 0, 34, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0mwbm"]
+atlas = ExtResource("1_1nnik")
+region = Rect2(170, 0, 34, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gq6cn"]
+atlas = ExtResource("1_1nnik")
+region = Rect2(204, 0, 34, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gcglt"]
+atlas = ExtResource("1_1nnik")
+region = Rect2(238, 0, 34, 44)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_opip3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pqeo8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wth0s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ka62w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xpwtj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_blgo2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0mwbm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gq6cn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gcglt")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 20.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_60owl"]
+size = Vector2(51, 71.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3ndau"]
+size = Vector2(57, 78)
+
+[node name="Enemy bunny" type="RigidBody2D"]
+script = ExtResource("1_c26lg")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0.25, -16.5)
+scale = Vector2(2.25, 2.43182)
+sprite_frames = SubResource("SpriteFrames_opip3")
+animation = &"idle"
+autoplay = "idle"
+frame = 2
+frame_progress = 0.92015
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-2.5, 1.75)
+shape = SubResource("RectangleShape2D_60owl")
+
+[node name="Area2D" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-2.5, -1)
+shape = SubResource("RectangleShape2D_3ndau")
+
+[node name="Hit_bunny-audio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_acjjt")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

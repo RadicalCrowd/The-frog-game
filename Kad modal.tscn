@@ -1,0 +1,592 @@
+[gd_scene load_steps=15 format=3 uid="uid://db3ddvld7g4q6"]
+
+[ext_resource type="Texture2D" uid="uid://kfmg62w08htt" path="res://Green.png" id="1_5ibs3"]
+[ext_resource type="Texture2D" uid="uid://d0pcxfiai53x0" path="res://Jump Frog(32x32).png" id="2_jgv4y"]
+[ext_resource type="Texture2D" uid="uid://bb0x05uihmgqe" path="res://Jump.png" id="3_rskju"]
+[ext_resource type="Texture2D" uid="uid://bajaaqf0x7dqq" path="res://cooltext464862111931830.png" id="4_r5sql"]
+[ext_resource type="Texture2D" uid="uid://bg0kvqkpsgxdj" path="res://Terrain (16x16).png" id="5_36rqg"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_em46r"]
+texture = ExtResource("5_36rqg")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:0/0 = 0
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:0/0 = 0
+9:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:0/0 = 0
+10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:0/0 = 0
+12:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:0/0 = 0
+13:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:0/0 = 0
+14:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:0/0 = 0
+15:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:0/0 = 0
+17:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3, -8, -3)
+18:0/0 = 0
+18:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3, -8, -3)
+19:0/0 = 0
+19:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3, -8, -3)
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:1/0 = 0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:1/0 = 0
+9:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:1/0 = 0
+10:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:1/0 = 0
+12:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:1/0 = 0
+13:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:1/0 = 0
+14:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:1/0 = 0
+15:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:1/0 = 0
+17:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3, -8, -3)
+18:1/0 = 0
+18:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3, -8, -3)
+19:1/0 = 0
+19:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3, -8, -3)
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:2/0 = 0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:2/0 = 0
+8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:2/0 = 0
+13:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:2/0 = 0
+14:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:2/0 = 0
+15:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:2/0 = 0
+17:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3, -8, -3)
+18:2/0 = 0
+18:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3, -8, -3)
+19:2/0 = 0
+19:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3, -8, -3)
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+6:4/0 = 0
+6:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:4/0 = 0
+7:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:4/0 = 0
+8:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:4/0 = 0
+9:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:4/0 = 0
+10:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:4/0 = 0
+12:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:4/0 = 0
+13:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:4/0 = 0
+14:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:4/0 = 0
+15:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+21:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+6:5/0 = 0
+6:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:5/0 = 0
+7:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:5/0 = 0
+8:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:5/0 = 0
+9:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:5/0 = 0
+10:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:5/0 = 0
+12:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:5/0 = 0
+13:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:5/0 = 0
+14:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:5/0 = 0
+15:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+21:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+6:6/0 = 0
+6:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:6/0 = 0
+7:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:6/0 = 0
+8:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:6/0 = 0
+13:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:6/0 = 0
+14:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:6/0 = 0
+15:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+17:8/0 = 0
+18:8/0 = 0
+19:8/0 = 0
+20:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+12:9/0 = 0
+13:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+17:9/0 = 0
+18:9/0 = 0
+19:9/0 = 0
+20:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+13:10/0 = 0
+14:10/0 = 0
+15:10/0 = 0
+18:10/0 = 0
+19:10/0 = 0
+20:10/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_0atl8"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_em46r")
+
+[sub_resource type="LabelSettings" id="LabelSettings_8mf1j"]
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_dqc7d"]
+font_size = 33
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_7lmy5"]
+font_size = 33
+outline_size = 9
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_wgm57"]
+font_size = 33
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_hb4f8"]
+font_size = 33
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_o2v36"]
+font_size = 33
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ksq8b"]
+font_size = 25
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1326.0
+offset_top = 39.0
+offset_right = 1326.0
+offset_bottom = 39.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -3.0
+offset_top = -1.0
+offset_right = 290.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_5ibs3")
+stretch_mode = 1
+
+[node name="Frog" type="TextureRect" parent="."]
+texture_filter = 1
+offset_left = -47.0
+offset_top = 132.0
+offset_right = 405.0
+offset_bottom = 578.0
+rotation = -0.29784
+scale = Vector2(1.36259, 1.36259)
+texture = ExtResource("2_jgv4y")
+
+[node name="Bunny" type="TextureRect" parent="."]
+texture_filter = 1
+offset_left = 845.0
+offset_top = 131.0
+offset_right = 1221.0
+offset_bottom = 544.0
+rotation = 0.296179
+scale = Vector2(1.42788, 1.42788)
+texture = ExtResource("3_rskju")
+
+[node name="Name" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 264.0
+offset_top = 16.0
+offset_right = 84.0
+offset_bottom = -452.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_r5sql")
+expand_mode = 1
+stretch_mode = 3
+
+[node name="TileMap" type="TileMap" parent="."]
+texture_filter = 1
+position = Vector2(0, -1)
+scale = Vector2(3, 3)
+tile_set = SubResource("TileSet_0atl8")
+format = 2
+layer_0/tile_data = PackedInt32Array(-65536, 458752, 2, -65535, 458752, 2, -65534, 458752, 2, -65533, 458752, 2, -65532, 458752, 2, -65531, 458752, 2, -65530, 458752, 2, -65529, 458752, 2, -65528, 458752, 2, -65527, 458752, 2, -65526, 458752, 2, -65525, 458752, 2, -65524, 458752, 2, -65523, 458752, 2, -65522, 458752, 2, -65521, 458752, 2, -65520, 458752, 2, -65519, 458752, 2, -65518, 458752, 2, -65517, 458752, 2, -65516, 458752, 2, -65515, 458752, 2, -65514, 458752, 2, -65513, 458752, 2, -65512, 458752, 2, -65511, 458752, 2, -65510, 458752, 2, -65509, 458752, 2, -65508, 458752, 2, -65507, 458752, 2, 30, 393216, 1, 65566, 393216, 1, 131102, 393216, 1, 196638, 393216, 1, 262174, 393216, 1, 327710, 393216, 1, 393246, 393216, 1, 458782, 393216, 1, 524318, 393216, 1, 589854, 393216, 1, 655390, 393216, 1, 720926, 393216, 1, 786462, 393216, 1, 851998, 393216, 1, 917534, 393216, 1, 983070, 393216, 1, 65535, 524288, 1, 131071, 524288, 1, 196607, 524288, 1, 262143, 524288, 1, 327679, 524288, 1, 393215, 524288, 1, 458751, 524288, 1, 524287, 524288, 1, 589823, 524288, 1, 655359, 524288, 1, 720895, 524288, 1, 786431, 524288, 1, 851967, 524288, 1, 917503, 524288, 1, 983039, 524288, 1, 1048575, 524288, 1, 1114112, 458752, 0, 1114113, 458752, 0, 1114114, 458752, 0, 1114115, 458752, 0, 1114116, 458752, 0, 1114117, 458752, 0, 1114118, 458752, 0, 1114119, 458752, 0, 1114120, 458752, 0, 1114121, 458752, 0, 1114122, 458752, 0, 1114123, 458752, 0, 1114124, 458752, 0, 1114125, 458752, 0, 1114126, 458752, 0, 1114127, 458752, 0, 1114128, 458752, 0, 1114129, 458752, 0, 1114130, 458752, 0, 1114131, 458752, 0, 1114132, 458752, 0, 1114133, 458752, 0, 1114134, 458752, 0, 1114135, 458752, 0, 1114136, 458752, 0, 1114137, 458752, 0, 1114138, 458752, 0, 1114139, 458752, 0, 1114140, 458752, 0, 1114141, 458752, 0, 1048606, 393216, 1, 1179647, 458752, 0, 1114142, 458752, 0, -1, 589824, 0, -65506, 655360, 0, -5, 458752, 1, 65531, 458752, 1, 131067, 458752, 1, 196603, 458752, 1, 262139, 458752, 1, 327675, 458752, 1, 393211, 458752, 1, 458747, 458752, 1, 524283, 458752, 1, 589819, 458752, 1, 655355, 458752, 1, 720891, 458752, 1, 786427, 458752, 1, 851963, 458752, 1, 917499, 458752, 1, 983035, 458752, 1, 1048571, 458752, 1, -4, 458752, 1, 65532, 458752, 1, 131068, 458752, 1, 196604, 458752, 1, 262140, 458752, 1, 327676, 458752, 1, 393212, 458752, 1, 458748, 458752, 1, 524284, 458752, 1, 589820, 458752, 1, 655356, 458752, 1, 720892, 458752, 1, 786428, 458752, 1, 851964, 458752, 1, 917500, 458752, 1, 983036, 458752, 1, 1048572, 458752, 1, -3, 458752, 1, 65533, 458752, 1, 131069, 458752, 1, 196605, 458752, 1, 262141, 458752, 1, 327677, 458752, 1, 393213, 458752, 1, 458749, 458752, 1, 524285, 458752, 1, 589821, 458752, 1, 655357, 458752, 1, 720893, 458752, 1, 786429, 458752, 1, 851965, 458752, 1, 917501, 458752, 1, 983037, 458752, 1, 1048573, 458752, 1, -2, 458752, 1, 65534, 458752, 1, 131070, 458752, 1, 196606, 458752, 1, 262142, 458752, 1, 327678, 458752, 1, 393214, 458752, 1, 458750, 458752, 1, 524286, 458752, 1, 589822, 458752, 1, 655358, 458752, 1, 720894, 458752, 1, 786430, 458752, 1, 851966, 458752, 1, 917502, 458752, 1, 983038, 458752, 1, 1048574, 458752, 1, 1114107, 458752, 1, 1114109, 458752, 1, 1114108, 458752, 1, 1114110, 458752, 1, 1114111, 524288, 1, 1048607, 458752, 1, 1048608, 458752, 1, 1048609, 458752, 1, 1048610, 458752, 1, 852001, 458752, 1, 786465, 458752, 1, 720929, 458752, 1, 655393, 458752, 1, 589857, 458752, 1, 524321, 458752, 1, 458785, 458752, 1, 393249, 458752, 1, 327713, 458752, 1, 262177, 458752, 1, 196641, 458752, 1, 131105, 458752, 1, 65569, 458752, 1, 33, 458752, 1, -65503, 458752, 1, -65504, 458752, 1, -65505, 458752, 1, 31, 458752, 1, 65567, 458752, 1, 131103, 458752, 1, 196639, 458752, 1, 262175, 458752, 1, 327711, 458752, 1, 393247, 458752, 1, 458783, 458752, 1, 524319, 458752, 1, 589855, 458752, 1, 655391, 458752, 1, 720927, 458752, 1, 786463, 458752, 1, 851999, 458752, 1, 917535, 458752, 1, 983071, 458752, 1, 983072, 458752, 1, 917536, 458752, 1, 852000, 458752, 1, 786464, 458752, 1, 720928, 458752, 1, 655392, 458752, 1, 589856, 458752, 1, 524320, 458752, 1, 458784, 458752, 1, 393248, 458752, 1, 327712, 458752, 1, 262176, 458752, 1, 196640, 458752, 1, 131104, 458752, 1, 65568, 458752, 1, 32, 458752, 1, 917537, 458752, 1, 983073, 458752, 1, 983074, 458752, 1, 917538, 458752, 1, 852002, 458752, 1, 786466, 458752, 1, 720930, 458752, 1, 655394, 458752, 1, 589858, 458752, 1, 524322, 458752, 1, 458786, 458752, 1, 393250, 458752, 1, 327714, 458752, 1, 262178, 458752, 1, 196642, 458752, 1, 131106, 458752, 1, 65570, 458752, 1, 34, 458752, 1, -65502, 458752, 1, 1179646, 458752, 0, 1179645, 458752, 0, 1179644, 458752, 0, 1179643, 458752, 0, 1114143, 458752, 0, 1114144, 458752, 0, 1114145, 458752, 0, 1114146, 458752, 0, -262149, 458752, 1, -196613, 458752, 1, -131077, 458752, 1, -65541, 458752, 1, -262148, 458752, 1, -196612, 458752, 1, -131076, 458752, 1, -65540, 458752, 1, -327676, 458752, 1, -327677, 458752, 1, -327678, 458752, 1, -327679, 458752, 1, -327680, 458752, 1, -262145, 458752, 1, -262146, 458752, 1, -262147, 458752, 1, -196611, 458752, 1, -131075, 458752, 1, -65539, 458752, 1, -65538, 458752, 1, -131074, 458752, 1, -196610, 458752, 1, -196609, 458752, 1, -131073, 458752, 1, -65537, 458752, 1, -131072, 458752, 1, -196608, 458752, 1, -262144, 458752, 1, -262143, 458752, 1, -196607, 458752, 1, -131071, 458752, 1, -131070, 458752, 1, -196606, 458752, 1, -262142, 458752, 1, -262141, 458752, 1, -196605, 458752, 1, -131069, 458752, 1, -131068, 458752, 1, -196604, 458752, 1, -262140, 458752, 1, -262139, 458752, 1, -327675, 458752, 1, -327674, 458752, 1, -262138, 458752, 1, -196602, 458752, 1, -196603, 458752, 1, -131067, 458752, 1, -131066, 458752, 1, -131065, 458752, 1, -196601, 458752, 1, -262137, 458752, 1, -327673, 458752, 1, -327672, 458752, 1, -262136, 458752, 1, -196600, 458752, 1, -131064, 458752, 1, -131063, 458752, 1, -196599, 458752, 1, -262135, 458752, 1, -327671, 458752, 1, -327670, 458752, 1, -262134, 458752, 1, -196598, 458752, 1, -131062, 458752, 1, -131061, 458752, 1, -196597, 458752, 1, -262133, 458752, 1, -327669, 458752, 1, -327668, 458752, 1, -262132, 458752, 1, -196596, 458752, 1, -131060, 458752, 1, -131059, 458752, 1, -196595, 458752, 1, -262131, 458752, 1, -327667, 458752, 1, -327666, 458752, 1, -262130, 458752, 1, -196594, 458752, 1, -131058, 458752, 1, -131057, 458752, 1, -196593, 458752, 1, -262129, 458752, 1, -327665, 458752, 1, -327664, 458752, 1, -262128, 458752, 1, -196592, 458752, 1, -131056, 458752, 1, -131055, 458752, 1, -196591, 458752, 1, -262127, 458752, 1, -327663, 458752, 1, -327662, 458752, 1, -262126, 458752, 1, -196590, 458752, 1, -131054, 458752, 1, -131053, 458752, 1, -196589, 458752, 1, -262125, 458752, 1, -327661, 458752, 1, -327660, 458752, 1, -262124, 458752, 1, -196588, 458752, 1, -131052, 458752, 1, -131051, 458752, 1, -196587, 458752, 1, -262123, 458752, 1, -327659, 458752, 1, -327658, 458752, 1, -262122, 458752, 1, -196586, 458752, 1, -131050, 458752, 1, -131049, 458752, 1, -196585, 458752, 1, -262121, 458752, 1, -327657, 458752, 1, -327656, 458752, 1, -262120, 458752, 1, -196584, 458752, 1, -131048, 458752, 1, -131047, 458752, 1, -196583, 458752, 1, -262119, 458752, 1, -327655, 458752, 1, -327654, 458752, 1, -262118, 458752, 1, -196582, 458752, 1, -131046, 458752, 1, -131045, 458752, 1, -196581, 458752, 1, -262117, 458752, 1, -327653, 458752, 1, -327652, 458752, 1, -262116, 458752, 1, -196580, 458752, 1, -131044, 458752, 1, -131043, 458752, 1, -196579, 458752, 1, -262115, 458752, 1, -327651, 458752, 1, -327650, 458752, 1, -262114, 458752, 1, -196578, 458752, 1, -131042, 458752, 1, -131041, 458752, 1, -196577, 458752, 1, -262113, 458752, 1, -327649, 458752, 1, -327648, 458752, 1, -262112, 458752, 1, -196576, 458752, 1, -131040, 458752, 1, -131039, 458752, 1, -196575, 458752, 1, -262111, 458752, 1, -327647, 458752, 1, -327646, 458752, 1, -262110, 458752, 1, -196574, 458752, 1, -131038, 458752, 1)
+
+[node name="Penerangan model" type="Panel" parent="."]
+offset_left = 5.0
+offset_top = 264.0
+offset_right = 465.0
+offset_bottom = 632.0
+
+[node name="Label" type="Label" parent="Penerangan model"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -219.5
+offset_top = -161.0
+offset_right = 219.5
+offset_bottom = 161.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1, 1.00448)
+text = "Apa?
+Hoppin Mad: Frog vs Bunny is 
+2D a platformer game
+about a frog seeking revenge 
+on the bunnies who destroyed
+its family and friends.
+
+
+Kenapa?
+The game provides a fun and relaxing 
+experience through the game
+and a creative gameplay .
+"
+label_settings = SubResource("LabelSettings_8mf1j")
+
+[node name="Panel" type="Panel" parent="Penerangan model"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = -77.0
+offset_right = 460.0
+offset_bottom = -3.0
+
+[node name="Label" type="Label" parent="Penerangan model/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -218.0
+offset_top = -23.0
+offset_right = 218.0
+offset_bottom = 23.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 34
+text = "Penerangan Model"
+label_settings = SubResource("LabelSettings_dqc7d")
+
+[node name="Kelebihan" type="Panel" parent="."]
+offset_left = 471.0
+offset_top = 264.0
+offset_right = 931.0
+offset_bottom = 632.0
+
+[node name="Label" type="Label" parent="Kelebihan"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -225.0
+offset_top = -179.0
+offset_right = 181.0
+offset_bottom = 143.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1, 1.00448)
+text = "- Simple but addictive gameplay.
+- User friendly design and UI
+ 
+Kelemahan:
+Currently, only
+ six levels are available.
+
+Pengunaan:
+ - People who want to enjoy a
+	simple and comforting game. 
+	Perfect for players looking for a 
+	relaxing experience with 
+	easy and fun gameplay."
+
+[node name="Panel" type="Panel" parent="Kelebihan"]
+layout_mode = 0
+offset_top = -77.0
+offset_right = 460.0
+offset_bottom = -3.0
+
+[node name="Label" type="Label" parent="Kelebihan/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -61.0
+offset_top = -11.0
+offset_right = 61.0
+offset_bottom = 11.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Kelebihan"
+label_settings = SubResource("LabelSettings_7lmy5")
+
+[node name="Had dan batasan" type="Panel" parent="."]
+offset_left = 5.0
+offset_top = 686.0
+offset_right = 931.0
+offset_bottom = 812.0
+
+[node name="Label" type="Label" parent="Had dan batasan"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -351.5
+offset_top = -61.0
+offset_right = 351.5
+offset_bottom = 61.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "The mini-game version only has six levels.
+Limited testing time before Coolest Projects 
+Malaysia 2024 means there might be bugs or balance issues.
+The game focuses on a single-player experience.
+ no multiplayer or additional modes are available yet."
+
+[node name="Panel" type="Panel" parent="Had dan batasan"]
+layout_mode = 0
+offset_top = -49.0
+offset_right = 926.0
+offset_bottom = -2.0
+
+[node name="Label" type="Label" parent="Had dan batasan/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.0
+offset_right = 20.0
+offset_bottom = 11.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Had dan Batasan:
+"
+label_settings = SubResource("LabelSettings_wgm57")
+
+[node name="Panel4" type="Panel" parent="."]
+offset_left = 938.0
+offset_top = 264.0
+offset_right = 1434.0
+offset_bottom = 632.0
+
+[node name="Label" type="Label" parent="Panel4"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -238.5
+offset_top = -180.0
+offset_right = 238.5
+offset_bottom = 180.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Programming: Developed in Godot Engine.
+
+Asset:
+Sprites sourced from 
+Pixel Adventure 1 & 2 asset pack 
+by pixel frog
+with custom sound effects 
+created for the game.
+
+Design Inspiration:
+Designed by a team of three,
+inspired by classic platformer games."
+
+[node name="Panel" type="Panel" parent="Panel4"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = -77.0
+offset_right = 496.0
+offset_bottom = -3.0
+
+[node name="Label" type="Label" parent="Panel4/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -107.5
+offset_top = -22.0
+offset_right = 107.5
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Data Set"
+label_settings = SubResource("LabelSettings_hb4f8")
+
+[node name="Ketepatan" type="Panel" parent="."]
+offset_left = 938.0
+offset_top = 686.0
+offset_right = 1434.0
+offset_bottom = 812.0
+
+[node name="Label" type="Label" parent="Ketepatan"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -208.0
+offset_top = -61.0
+offset_right = 208.0
+offset_bottom = 61.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Tested by a small group of players.
+Feedback showed fun levels but 
+suggested improvements in
+ difficulty and gameplay flow."
+
+[node name="Panel" type="Panel" parent="Ketepatan"]
+layout_mode = 0
+offset_top = -49.0
+offset_right = 496.0
+offset_bottom = -2.0
+
+[node name="Label" type="Label" parent="Ketepatan/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.0
+offset_right = 20.0
+offset_bottom = 11.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Ketepatan"
+label_settings = SubResource("LabelSettings_o2v36")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1031.0
+offset_top = 58.0
+offset_right = 1209.0
+offset_bottom = 91.0
+text = "Kad modal
+"
+label_settings = SubResource("LabelSettings_ksq8b")

@@ -1,0 +1,139 @@
+[gd_scene load_steps=6 format=3 uid="uid://docelmbxtt2ba"]
+
+[ext_resource type="Script" path="res://Scenes-tscn-gd files/info_menu.gd" id="1_6r1om"]
+[ext_resource type="Texture2D" uid="uid://kfmg62w08htt" path="res://Green.png" id="2_52g0s"]
+[ext_resource type="Texture2D" uid="uid://d0pcxfiai53x0" path="res://Jump Frog(32x32).png" id="3_qdnii"]
+[ext_resource type="Texture2D" uid="uid://bb0x05uihmgqe" path="res://Jump.png" id="4_t6uxo"]
+[ext_resource type="FontFile" uid="uid://b0c0pob145etb" path="res://retro_computer_personal_use.ttf" id="5_x5vgf"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_right = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6r1om")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_52g0s")
+stretch_mode = 1
+
+[node name="Frog" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 249.0
+offset_top = -47.0
+offset_right = 701.0
+offset_bottom = 399.0
+rotation = 0.315511
+texture = ExtResource("3_qdnii")
+
+[node name="Bunny" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 634.0
+offset_top = 207.0
+offset_right = 1034.0
+offset_bottom = 646.0
+rotation = 0.296179
+texture = ExtResource("4_t6uxo")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -429.0
+offset_top = -312.0
+offset_right = 429.0
+offset_bottom = 233.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -314.0
+offset_top = -238.5
+offset_right = 314.0
+offset_bottom = 238.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_x5vgf")
+theme_override_font_sizes/font_size = 13
+text = "Game Title: Hoppin Mad : Frog vs Bunny
+
+Developer: [Wentaria Studio] 
+- Akif Adli : programmer/ lead dev   
+- Amir Hakimi : Graphics Designer
+- Muhammad Hamka : Level Designer
+
+Extra Credits:
+awesome tutorials by
+- kron                 
+- Devworn
+- cococode
+
+Genre: Simple Platformer
+
+Game Description:
+In this exciting adventure, you play as a brave frog on a mission
+ for revenge against a sneaky bunny who did the unthinkable 
+ending your family. Dive into a wild journey packed
+with challenges, surprises, and a quest to set things right
+
+
+Current Version: 8.0 beta
+Release Date: 31 August 2024 
+"
+
+[node name="back_button" type="Button" parent="."]
+process_mode = 3
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -71.0
+offset_right = 191.0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("5_x5vgf")
+theme_override_font_sizes/font_size = 45
+text = "Back"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_x5vgf")
+theme_override_font_sizes/font_size = 23
+text = "fps :"
+
+[node name="Fps_counter" type="Label" parent="HBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_x5vgf")
+theme_override_font_sizes/font_size = 23
+text = "100
+"
+
+[connection signal="pressed" from="back_button" to="." method="_on_back_button_pressed"]

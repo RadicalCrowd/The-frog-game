@@ -1,0 +1,415 @@
+[gd_scene load_steps=17 format=3 uid="uid://bn5lh7uo1mghh"]
+
+[ext_resource type="Script" path="res://Scenes-tscn-gd files/Levels_menu.gd" id="1_886jj"]
+[ext_resource type="Texture2D" uid="uid://kfmg62w08htt" path="res://Green.png" id="2_x804i"]
+[ext_resource type="Texture2D" uid="uid://d0pcxfiai53x0" path="res://Jump Frog(32x32).png" id="3_cby6e"]
+[ext_resource type="Texture2D" uid="uid://bb0x05uihmgqe" path="res://Jump.png" id="4_fjyq8"]
+[ext_resource type="Texture2D" uid="uid://bg0kvqkpsgxdj" path="res://Terrain (16x16).png" id="5_vc2ap"]
+[ext_resource type="FontFile" uid="uid://b0c0pob145etb" path="res://retro_computer_personal_use.ttf" id="6_038uw"]
+[ext_resource type="PackedScene" uid="uid://dix22x53qlaes" path="res://Scenes-tscn-gd files/Main_Character.tscn" id="6_fr8vv"]
+[ext_resource type="AudioStream" uid="uid://bktby23c073wl" path="res://Audios/blipSelect(1).wav" id="7_nprt1"]
+[ext_resource type="AudioStream" uid="uid://cwnrtv1nwv8ub" path="res://Audios/jump(2).wav" id="8_7050w"]
+[ext_resource type="AudioStream" uid="uid://bjrhk2wgyeryo" path="res://Audios/jump (1).wav" id="9_842uw"]
+[ext_resource type="AudioStream" uid="uid://crx2vbeyxbcb1" path="res://Audios/hitHurt.wav" id="10_i2pig"]
+[ext_resource type="AudioStream" uid="uid://bpgjxsq3o8mnv" path="res://Audios/mixkit-winning-a-coin-video-game-2069.wav" id="10_xx8dk"]
+[ext_resource type="AudioStream" uid="uid://b7vxsfa8dygiq" path="res://Audios/mixkit-arcade-retro-game-over-213.wav" id="12_b8jf7"]
+[ext_resource type="AudioStream" uid="uid://ygo6334t4m5s" path="res://Audios/mixkit-game-level-completed-2059.wav" id="13_jxyhm"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ct1av"]
+texture = ExtResource("5_vc2ap")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:0/0 = 0
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:0/0 = 0
+9:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:0/0 = 0
+10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:0/0 = 0
+12:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:0/0 = 0
+13:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:0/0 = 0
+14:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:0/0 = 0
+15:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:0/0 = 0
+17:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3, -8, -3)
+18:0/0 = 0
+18:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3, -8, -3)
+19:0/0 = 0
+19:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3, -8, -3)
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:1/0 = 0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:1/0 = 0
+9:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:1/0 = 0
+10:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:1/0 = 0
+12:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:1/0 = 0
+13:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:1/0 = 0
+14:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:1/0 = 0
+15:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:1/0 = 0
+17:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3, -8, -3)
+18:1/0 = 0
+18:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3, -8, -3)
+19:1/0 = 0
+19:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3, -8, -3)
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:2/0 = 0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:2/0 = 0
+8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:2/0 = 0
+13:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:2/0 = 0
+14:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:2/0 = 0
+15:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:2/0 = 0
+17:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3, -8, -3)
+18:2/0 = 0
+18:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3, -8, -3)
+19:2/0 = 0
+19:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3, -8, -3)
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+6:4/0 = 0
+6:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:4/0 = 0
+7:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:4/0 = 0
+8:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:4/0 = 0
+9:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:4/0 = 0
+10:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:4/0 = 0
+12:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:4/0 = 0
+13:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:4/0 = 0
+14:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:4/0 = 0
+15:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+21:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+6:5/0 = 0
+6:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:5/0 = 0
+7:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:5/0 = 0
+8:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:5/0 = 0
+9:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:5/0 = 0
+10:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:5/0 = 0
+12:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:5/0 = 0
+13:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:5/0 = 0
+14:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:5/0 = 0
+15:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+21:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+6:6/0 = 0
+6:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:6/0 = 0
+7:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:6/0 = 0
+8:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:6/0 = 0
+13:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:6/0 = 0
+14:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:6/0 = 0
+15:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+17:8/0 = 0
+18:8/0 = 0
+19:8/0 = 0
+20:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+12:9/0 = 0
+13:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+17:9/0 = 0
+18:9/0 = 0
+19:9/0 = 0
+20:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+13:10/0 = 0
+14:10/0 = 0
+15:10/0 = 0
+18:10/0 = 0
+19:10/0 = 0
+20:10/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_ur71o"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_ct1av")
+
+[node name="levels_menu" type="Node"]
+script = ExtResource("1_886jj")
+
+[node name="Background" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -9.0
+offset_right = 18.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_x804i")
+stretch_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(247, 236)
+rotation = 0.244438
+scale = Vector2(12.8565, 11.2232)
+texture = ExtResource("3_cby6e")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(873, 351)
+rotation = 0.244438
+scale = Vector2(13.1831, 12.2641)
+texture = ExtResource("4_fjyq8")
+
+[node name="TileMap" type="TileMap" parent="."]
+texture_filter = 1
+scale = Vector2(3, 3)
+tile_set = SubResource("TileSet_ur71o")
+format = 2
+layer_0/tile_data = PackedInt32Array(-65536, 458752, 2, -65535, 458752, 2, -65534, 458752, 2, -65533, 458752, 2, -65532, 458752, 2, -65531, 458752, 2, -65530, 458752, 2, -65529, 458752, 2, -65528, 458752, 2, -65527, 458752, 2, -65526, 458752, 2, -65525, 458752, 2, -65524, 458752, 2, -65523, 458752, 2, -65522, 458752, 2, -65521, 458752, 2, -65520, 458752, 2, -65519, 458752, 2, -65518, 458752, 2, -65517, 458752, 2, -65516, 458752, 2, -65515, 458752, 2, -65514, 458752, 2, -65513, 458752, 2, 851968, 458752, 0, 851969, 458752, 0, 851970, 458752, 0, 851971, 458752, 0, 851972, 458752, 0, 851973, 458752, 0, 851974, 458752, 0, 851975, 458752, 0, 851976, 458752, 0, 851977, 458752, 0, 851978, 458752, 0, 851979, 458752, 0, 851980, 458752, 0, 851981, 458752, 0, 851982, 458752, 0, 851983, 458752, 0, 851984, 458752, 0, 851985, 458752, 0, 851986, 458752, 0, 851987, 458752, 0, 851988, 458752, 0, 851989, 458752, 0, 851990, 458752, 0, 851991, 458752, 0, 24, 393216, 1, 65560, 393216, 1, 131096, 393216, 1, 196632, 393216, 1, 262168, 393216, 1, 327704, 393216, 1, 393240, 393216, 1, 458776, 393216, 1, 524312, 393216, 1, 589848, 393216, 1, 655384, 393216, 1, 720920, 393216, 1, 786456, 393216, 1, 851992, 458752, 0, 917503, 458752, 0, 65535, 524288, 1, 131071, 524288, 1, 196607, 524288, 1, 262143, 524288, 1, 327679, 524288, 1, 393215, 524288, 1, 458751, 524288, 1, 524287, 524288, 1, 589823, 524288, 1, 655359, 524288, 1, 720895, 524288, 1, 786431, 524288, 1, 851967, 524288, 1, -1, 589824, 0, -65512, 655360, 0)
+
+[node name="Level buttons" type="BoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -283.0
+offset_top = -265.0
+offset_right = 283.0
+offset_bottom = 265.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+alignment = 1
+vertical = true
+
+[node name="Tutorial" type="Button" parent="Level buttons"]
+process_mode = 3
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_038uw")
+theme_override_font_sizes/font_size = 52
+text = "Tutorial"
+
+[node name="Level1" type="Button" parent="Level buttons"]
+process_mode = 3
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_038uw")
+theme_override_font_sizes/font_size = 52
+text = "Level 1"
+
+[node name="Level2" type="Button" parent="Level buttons"]
+process_mode = 3
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_038uw")
+theme_override_font_sizes/font_size = 52
+text = "Level 2"
+
+[node name="BoxContainer2" type="BoxContainer" parent="Level buttons"]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+vertical = true
+
+[node name="Level3" type="Button" parent="Level buttons/BoxContainer2"]
+process_mode = 3
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_038uw")
+theme_override_font_sizes/font_size = 52
+text = "Level 3"
+
+[node name="Level4" type="Button" parent="Level buttons/BoxContainer2"]
+process_mode = 3
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_038uw")
+theme_override_font_sizes/font_size = 52
+text = "Level 4"
+
+[node name="Level5" type="Button" parent="Level buttons/BoxContainer2"]
+process_mode = 3
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_038uw")
+theme_override_font_sizes/font_size = 52
+text = "Level 5"
+
+[node name="back_button" type="Button" parent="."]
+process_mode = 3
+texture_filter = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 13.0
+offset_top = -122.0
+offset_right = 214.0
+offset_bottom = -38.0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("6_038uw")
+theme_override_font_sizes/font_size = 45
+text = "Back"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_038uw")
+theme_override_font_sizes/font_size = 23
+text = "fps :"
+
+[node name="Fps_counter" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_038uw")
+theme_override_font_sizes/font_size = 23
+text = "100
+"
+
+[node name="More_button" type="Button" parent="."]
+texture_filter = 1
+offset_left = 13.0
+offset_top = 433.0
+offset_right = 215.0
+offset_bottom = 517.0
+theme_override_fonts/font = ExtResource("6_038uw")
+theme_override_font_sizes/font_size = 45
+text = "More"
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("6_fr8vv")]
+texture_filter = 1
+position = Vector2(232, 553)
+
+[node name="Double_jump_audio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_7050w")
+volume_db = -40.0
+
+[node name="Hit_By_Bunny_audio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_i2pig")
+
+[node name="Kill_bunny_audio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_842uw")
+
+[node name="Picked_Up_Cherry_audio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_xx8dk")
+volume_db = -10.0
+
+[node name="Click_audio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_nprt1")
+
+[node name="Game_over_audio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_b8jf7")
+
+[node name="Levels_done_audio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_jxyhm")
+
+[connection signal="mouse_entered" from="Level buttons/Tutorial" to="." method="_on_level_1_mouse_entered"]
+[connection signal="pressed" from="Level buttons/Tutorial" to="." method="_on_tutorial_pressed"]
+[connection signal="pressed" from="Level buttons/Tutorial" to="." method="_on_play_button_pressed"]
+[connection signal="mouse_entered" from="Level buttons/Level1" to="." method="_on_level_2_mouse_entered"]
+[connection signal="pressed" from="Level buttons/Level1" to="." method="_on_level_1_pressed"]
+[connection signal="mouse_entered" from="Level buttons/Level2" to="." method="_on_level_3_mouse_entered"]
+[connection signal="pressed" from="Level buttons/Level2" to="." method="_on_level_2_pressed"]
+[connection signal="mouse_entered" from="Level buttons/BoxContainer2/Level3" to="." method="_on_level_4_mouse_entered"]
+[connection signal="pressed" from="Level buttons/BoxContainer2/Level3" to="." method="_on_level_3_pressed"]
+[connection signal="mouse_entered" from="Level buttons/BoxContainer2/Level4" to="." method="_on_level_5_mouse_entered"]
+[connection signal="pressed" from="Level buttons/BoxContainer2/Level4" to="." method="_on_level_4_pressed"]
+[connection signal="mouse_entered" from="Level buttons/BoxContainer2/Level5" to="." method="_on_level_6_mouse_entered"]
+[connection signal="pressed" from="Level buttons/BoxContainer2/Level5" to="." method="_on_level_5_pressed"]
+[connection signal="mouse_entered" from="back_button" to="." method="_on_back_button_mouse_entered"]
+[connection signal="pressed" from="back_button" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="More_button" to="." method="_on_button_pressed"]
